@@ -21,7 +21,8 @@ exports.builder = yargs =>
     .option("p", {
       alias: "provider",
       description: `Specify an ipfs provider: "dappnode" (default), "infura", "localhost:5002"`,
-      default: "dappnode"
+      default: "http://127.0.0.1:5001"
+      // default: "dappnode"
     })
     .option("t", {
       alias: "timeout",
